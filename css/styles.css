@@ -19,17 +19,21 @@
 .gray {
     color: #8B8B8B;
 }
+.bg-body-white {
+    background-color: rgba(255, 255, 255, .85);
+}
 .navbar-nav .nav-link {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
     color: #000;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .navbar-nav .nav-link.active {
     color: #B81104;
 }
 .nav-link:hover {
     color: #D46F67;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 .footer-nav .nav-link {
     font-family: 'Bebas Neue', sans-serif;
@@ -42,6 +46,7 @@
 }
 .footer-nav .nav-link:hover {
     color: #D46F67;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 .cma {
     color: #232A63;
@@ -52,9 +57,14 @@
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
     font-size: 2rem;
@@ -77,8 +87,101 @@ p {
 }
 .copyright {
     color: #8B8B8B;
-    font-size: 1rem;
+    font-size: .7rem;
 }
 .social-icon:hover {
     opacity: 60%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.red-button {
+    background-color: #B81104;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.red-button:hover {
+    background-color: #D46F67;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    max-width: 600px;
+}
+.portfolio-container {
+    display: flex;
+    overflow-y: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.portfolio-card {
+    width: 250px;
+    min-width: 23%;
+    margin: 0;
+    padding: 0;
+    transition: scale 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.pc-image {
+    filter: brightness(.5);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+.pc-image:hover {
+    filter: brightness(.8);
+}
+.portfolio-card:hover {
+    scale: 1.1;
+    z-index: 2;
+}
+.portfolio-card.active {
+    scale: 1.1;
+}
+.image-container {
+    position: relative;
+}
+.text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+}
+.darken {
+    filter: brightness(.8);
+}
+strong {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.form-control::placeholder {
+    color: #a8a8a8;
+}
+.form-control {
+    border: solid 1px #a8a8a8;
+    border-radius: 0;
+}
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.portfolio-gallery img {
+  width: 100%;
+  height: auto;
 }
