@@ -29,9 +29,10 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="mx-2 nav-link" href="index.html">Home</a>
-                            <a class="mx-2 nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
-                            <a class="mx-2 nav-link" href="contact.html">Contact</a>
+                            <a class="mx-2 nav-link ms-auto" href="index.html">Home</a>
+                            <a class="mx-2 nav-link active ms-auto" aria-current="page"
+                                href="portfolio.html">Portfolio</a>
+                            <a class="mx-2 nav-link ms-auto" href="contact.html">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -39,58 +40,66 @@
         </nav>
         <!-- Jumbotron -->
         <div class="position-relative">
-            <img src="images/black.png" class="w-100 darken" alt="">
-            <div style="padding-top: 50px;" class="position-absolute top-50 start-50 translate-middle">
-                <h1 class="white text-center">Masterfully Crafted</h1>
+            <img src="images/black.png" class="w-100 darken header-bg-portfolio" alt="">
+            <div style="padding-top: 50px;" class="position-absolute top-50 start-50 translate-middle w-100">
+                <h1 class="white text-center p-2">Masterfully Crafted</h1>
             </div>
         </div>
-        <!-- Showcase -->
+        <!-- Projects -->
         <h2 class="text-center mt-5"><span class="underline">Explore Our Projects</span></h2>
-        <div class="container-lg">
-            <div class="row">
-                <div class="portfolio-container">
-                    <div class="portfolio-card position-relative" onclick="showGallery('NE Timber Hills Dr')">
-                        <div class="image-container">
-                            <img src="images/ne-timber-hills-dr/DSC00080.jpg" class="w-100 pc-image" alt="">
-                            <h3 class="text-overlay white"><span class="red">01</span><br>NE Timber Hills Dr</h3>
+        <div class="container">
+            <div class="mx-2">
+                <div class="row">
+                    <div class="portfolio-container">
+                        <div class="portfolio-card position-relative" onclick="showGallery('NE Timber Hills Dr')">
+                            <div class="image-container">
+                                <img src="images/ne-timber-hills-dr/DSC00080.jpg" class="w-100 pc-image" alt="">
+                                <h3 class="text-overlay white"><span class="red">01</span><br>NE Timber Hills Dr</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-card position-relative" onclick="showGallery('Theden St')">
+                            <div class="image-container">
+                                <img src="images/theden-st/leekitchen-21.JPG" class="w-100 pc-image" alt="">
+                                <h3 class="text-overlay white"><span class="red">02</span><br>Theden St</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-card position-relative" onclick="showGallery('W 126th St')">
+                            <div class="image-container">
+                                <img src="images/marble.png" class="w-100 pc-image" alt="">
+                                <h3 class="text-overlay white"><span class="red">03</span><br>W 126th St</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-card position-relative" onclick="showGallery('Terrace St')">
+                            <div class="image-container">
+                                <img src="images/terrace-st/DSC00106.jpg" class="w-100 pc-image" alt="">
+                                <h3 class="text-overlay white"><span class="red">04</span><br>Terrace St</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-card position-relative" onclick="showGallery('High Dr')">
+                            <div class="image-container">
+                                <img src="images/SOE01960.png" class="w-100 pc-image" alt="">
+                                <h3 class="text-overlay white"><span class="red">05</span><br>High Dr</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-card position-relative" onclick="showGallery('Berryhill Dr')">
+                            <div class="image-container">
+                                <img src="images/SOE00004.png" class="w-100 pc-image" alt="">
+                                <h3 class="text-overlay white"><span class="red">06</span><br>Berryhill Dr</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-card position-relative" onclick="showGallery('51st St')">
+                            <div class="image-container">
+                                <img src="images/51st-st/bath-3.JPG" class="w-100 pc-image" alt="">
+                                <h3 class="text-overlay white"><span class="red">07</span><br>51st St</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="portfolio-card position-relative" onclick="showGallery('Theden St')">
-                        <div class="image-container">
-                            <img src="images/theden-st/leekitchen-21.JPG" class="w-100 pc-image" alt="">
-                            <h3 class="text-overlay white"><span class="red">02</span><br>Theden St</h3>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="text-and-arrow">
+                        <h4>Scroll for More<span class="arrow"></span>
                     </div>
-                    <div class="portfolio-card position-relative" onclick="showGallery('W 126th St')">
-                        <div class="image-container">
-                            <img src="images/marble.png" class="w-100 pc-image" alt="">
-                            <h3 class="text-overlay white"><span class="red">03</span><br>W 126th St</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-card position-relative" onclick="showGallery('Terrace St')">
-                        <div class="image-container">
-                            <img src="images/terrace-st/DSC00106.jpg" class="w-100 pc-image" alt="">
-                            <h3 class="text-overlay white"><span class="red">04</span><br>Terrace St</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-card position-relative" onclick="showGallery('High Dr')">
-                        <div class="image-container">
-                            <img src="images/SOE01960.png" class="w-100 pc-image" alt="">
-                            <h3 class="text-overlay white"><span class="red">05</span><br>High Dr</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-card position-relative" onclick="showGallery('Berryhill Dr')">
-                        <div class="image-container">
-                            <img src="images/SOE00004.png" class="w-100 pc-image" alt="">
-                            <h3 class="text-overlay white"><span class="red">06</span><br>Berryhill Dr</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-card position-relative" onclick="showGallery('51st St')">
-                        <div class="image-container">
-                            <img src="images/51st-st/bath-3.JPG" class="w-100 pc-image" alt="">
-                            <h3 class="text-overlay white"><span class="red">07</span><br>51st St</h3>
-                        </div>
-                    </div>
+                    </h4>
                 </div>
             </div>
         </div>
@@ -100,17 +109,20 @@
                     View Gallery</span>
             </h2>
             <div id="portfolioGallery" class="portfolio-gallery">
-
             </div>
+        </div>
+        <div class="container-lg">
+            <span class="l-gray-line my-5"></span>
         </div>
         <!-- Footer -->
         <footer>
             <div class="container-lg mt-3">
                 <div class="row mb-3">
-                    <div class="col-4">
-                        <img src="images/color-rbc.png" alt="red beard cabinets logo" style="max-width: 250px;">
+                    <div class="col-12 col-sm-5">
+                        <img src="images/color-rbc.png" alt="red beard cabinets logo"
+                            style="max-width: 250px; min-width: 150px;" class="w-100 rbc-footer">
                     </div>
-                    <div class="col-4 d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-sm-2 d-flex justify-content-center align-items-center rbc-footer">
                         <a href="https://m.facebook.com/profile.php?id=100062410154628" class="mx-1 social-icon">
                             <img src="images/facebook.png" alt="facebook" style="max-width: 40px;">
                         </a>
@@ -118,25 +130,24 @@
                             <img src="images/insta.png" alt="instagram" style="max-width: 40px;">
                         </a>
                     </div>
-                    <div class="col-4 justify-content-end d-flex align-items-center">
+                    <div class="col-12 col-sm-5 d-flex align-items-center rbc-footer-nav">
                         <div class="footer-nav d-flex flex-nowrap">
                             <a class="mx-2 nav-link" href="index.html">Home</a>
-                            <a class="mx-2 nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
-                            <a class="mx-2 nav-link" href="contact.html">Contact</a>
+                            <a class="mx-2 nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="mx-2 nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </div>
                     </div>
                 </div>
                 <span class="l-gray-line"></span>
                 <div class="row mt-3 mb-3">
-                    <div class="col-6 d-flex align-items-center">
-                        <h3 class="cma">Proud member of the</h3>
-                        <img src="images/CMAlogo_outlined_2023.png" alt="cabinet makers association"
-                            style="max-height: 100px;">
+                    <div class="col-12 col-sm-6 d-flex align-items-center cma">
+                        <h4>Proud member of the</h3>
+                            <img src="images/CMAlogo_outlined_2023.png" alt="cabinet makers association"
+                                style="max-height: 100px;">
                     </div>
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-12 col-sm-6 d-flex align-items-center">
                         <div class="w-100">
-                            <h4 class="copyright text-end">&copy; 2020 Red Beard Cabinets LLC. All rights
-                                reserved</h4>
+                            <h4 class="copyright">&copy; 2020 Red Beard Cabinets LLC. All rights reserved</h4>
                         </div>
                     </div>
                 </div>
