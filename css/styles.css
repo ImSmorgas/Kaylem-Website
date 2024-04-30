@@ -123,6 +123,7 @@ p {
 }
 .portfolio-container {
     display: flex;
+    position: relative;
     overflow-y: none;
     overflow-x: auto;
     scrollbar-width: none;
@@ -137,10 +138,12 @@ p {
     padding: 0;
     transition: scale 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    will-change: scale;
 }
 .pc-image {
     filter: brightness(.5);
     transition: filter 0.3s ease, transform 0.3s ease;
+    will-change: filter;
 }
 .pc-image:hover {
     filter: brightness(.8);
@@ -148,9 +151,7 @@ p {
 .portfolio-card:hover {
     scale: 1.1;
     z-index: 2;
-}
-.portfolio-card.active {
-    scale: 1.1;
+    will-change: transform, scale, z-index, scroll-position;
 }
 .image-container {
     position: relative;
@@ -177,11 +178,11 @@ strong {
     border-radius: 0;
 }
 .portfolio-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 .portfolio-gallery img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }

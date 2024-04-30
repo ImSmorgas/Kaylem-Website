@@ -14,7 +14,6 @@ function showGallery(streetName) {
             'images/ne-timber-hills-dr/DSC00080.jpg',
             'images/ne-timber-hills-dr/DSC00138.jpg',
             'images/ne-timber-hills-dr/DSC00045.jpg',
-            'images/ne-timber-hills-dr/DSC00045.jpg',
             'images/ne-timber-hills-dr/DSC00063.jpg',
             'images/ne-timber-hills-dr/DSC00075.jpg',
             'images/ne-timber-hills-dr/DSC00082.jpg',
@@ -143,6 +142,7 @@ function showGallery(streetName) {
 
     images.forEach(function(imageSrc) {
         var img = document.createElement('img');
+        img.setAttribute('loading', 'lazy');
         img.src = imageSrc;
         gallery.appendChild(img);
     });
