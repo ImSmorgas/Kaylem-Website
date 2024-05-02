@@ -1,4 +1,6 @@
 function showGallery(streetName) {
+    document.getElementById('portfolioGalleryContainer').scrollIntoView({ behavior: 'smooth' });
+
     var streetNameElement = document.getElementById('streetName');
     streetNameElement.innerHTML = '<span class="underline">' + streetName + '</span>';
 
@@ -9,141 +11,147 @@ function showGallery(streetName) {
 
     if (streetName === 'NE Timber Hills Dr') {
         images = [
-            'images/ne-timber-hills-dr/DSC00061.jpg',
-            'images/ne-timber-hills-dr/DSC00062.jpg',
-            'images/ne-timber-hills-dr/DSC00080.jpg',
-            'images/ne-timber-hills-dr/DSC00138.jpg',
-            'images/ne-timber-hills-dr/DSC00045.jpg',
-            'images/ne-timber-hills-dr/DSC00063.jpg',
-            'images/ne-timber-hills-dr/DSC00075.jpg',
-            'images/ne-timber-hills-dr/DSC00082.jpg',
-            'images/ne-timber-hills-dr/DSC00087.jpg',
-            'images/ne-timber-hills-dr/DSC00089.jpg',
-            'images/ne-timber-hills-dr/DSC00096.jpg',
-            'images/ne-timber-hills-dr/DSC00109.jpg',
-            'images/ne-timber-hills-dr/DSC00115.jpg',
-            'images/ne-timber-hills-dr/DSC00117.jpg',
-            'images/ne-timber-hills-dr/DSC00140.jpg',
-            'images/ne-timber-hills-dr/DSC00143.jpg',
-            'images/ne-timber-hills-dr/DSC00152.jpg'
+            'images/ne-timber-hills-dr/Artboard8.png',
+            'images/ne-timber-hills-dr/Artboard9.png',
+            'images/ne-timber-hills-dr/Artboard10.png',
+            'images/ne-timber-hills-dr/Artboard11.png',
+            'images/ne-timber-hills-dr/Artboard1.png',
+            'images/ne-timber-hills-dr/Artboard2.png',
+            'images/ne-timber-hills-dr/Artboard3.png',
+            'images/ne-timber-hills-dr/Artboard4.png',
+            'images/ne-timber-hills-dr/Artboard5.png',
+            'images/ne-timber-hills-dr/Artboard6.png',
+            'images/ne-timber-hills-dr/Artboard7.png',
+            'images/ne-timber-hills-dr/Artboard13.png',
+            'images/ne-timber-hills-dr/Artboard14.png',
+            'images/ne-timber-hills-dr/Artboard15.png',
+            'images/ne-timber-hills-dr/Artboard16.png',
+            'images/ne-timber-hills-dr/Artboard17.png',
+            'images/ne-timber-hills-dr/Artboard18.png'
         ];
     } else if (streetName === 'Theden St') {
         images = [
-            'images/theden-st/leekitchen-3.JPG',
-            'images/theden-st/leekitchen-4.JPG',
-            'images/theden-st/leekitchen-5.JPG',
-            'images/theden-st/leekitchen-10.JPG',
-            'images/theden-st/leekitchen-12.JPG',
-            'images/theden-st/leekitchen-18.JPG',
-            'images/theden-st/leekitchen-21.JPG',
-            'images/theden-st/leekitchen-23.JPG',
-            'images/theden-st/leekitchen-1.JPG',
-            'images/theden-st/leekitchen-6.JPG',
-            'images/theden-st/leekitchen-13.JPG',
-            'images/theden-st/leekitchen-14.JPG',
-            'images/theden-st/leekitchen-22.JPG',
-            'images/theden-st/leekitchen-24.JPG'
+            'images/theden-st/Artboard8.png',
+            'images/theden-st/Artboard9.png',
+            'images/theden-st/Artboard10.png',
+            'images/theden-st/Artboard11.png',
+            'images/theden-st/Artboard12.png',
+            'images/theden-st/Artboard34.png',
+            'images/theden-st/Artboard35.png',
+            'images/theden-st/Artboard36.png',
+            'images/theden-st/Artboard1.png',
+            'images/theden-st/Artboard2.png',
+            'images/theden-st/Artboard3.png',
+            'images/theden-st/Artboard4.png',
+            'images/theden-st/Artboard5.png',
+            'images/theden-st/Artboard6.png'
         ];
     } else if (streetName === 'W 126th St') {
         images = [
-            'images/w-126th-st/SOE00010.jpg',
-            'images/w-126th-st/SOE00013.jpg',
-            'images/w-126th-st/SOE00047.jpg',
-            'images/w-126th-st/SOE00050.jpg',
-            'images/w-126th-st/SOE00053.jpg',
-            'images/w-126th-st/SOE00058.jpg',
-            'images/w-126th-st/SOE00061.jpg',
-            'images/w-126th-st/SOE00062.jpg',
-            'images/w-126th-st/SOE00082.jpg',
-            'images/w-126th-st/SOE00090.jpg',
-            'images/w-126th-st/SOE00099.jpg',
-            'images/w-126th-st/SOE00115.jpg',
-            'images/w-126th-st/SOE00030.jpg'
+            'images/w-126th-st/Artboard1.png',
+            'images/w-126th-st/Artboard2.png',
+            'images/w-126th-st/Artboard3.png',
+            'images/w-126th-st/Artboard4.png',
+            'images/w-126th-st/Artboard5.png',
+            'images/w-126th-st/Artboard6.png',
+            'images/w-126th-st/Artboard7.png',
+            'images/w-126th-st/Artboard13.png',
+            'images/w-126th-st/Artboard14.png',
+            'images/w-126th-st/Artboard15.png',
+            'images/w-126th-st/Artboard16.png',
+            'images/w-126th-st/Artboard17.png',
+            'images/w-126th-st/Artboard8.png'
         ];
     } else if (streetName === 'Terrace St') {
         images = [
-            'images/terrace-st/DSC00065.jpg',
-            'images/terrace-st/DSC00067.jpg',
-            'images/terrace-st/DSC00069.jpg',
-            'images/terrace-st/DSC00078.jpg',
-            'images/terrace-st/DSC00104.jpg',
-            'images/terrace-st/DSC00106.jpg',
-            'images/terrace-st/DSC00024.jpg',
-            'images/terrace-st/DSC00028.jpg',
-            'images/terrace-st/DSC00031.jpg',
-            'images/terrace-st/DSC00035.jpg',
-            'images/terrace-st/DSC00038.jpg',
-            'images/terrace-st/DSC00042.jpg',
-            'images/terrace-st/DSC00045.jpg',
-            'images/terrace-st/DSC00063.jpg',
-            'images/terrace-st/DSC00071.jpg',
-            'images/terrace-st/DSC00092.jpg',
-            'images/terrace-st/DSC00093.jpg'
+            'images/terrace-st/Artboard8.png',
+            'images/terrace-st/Artboard9.png',
+            'images/terrace-st/Artboard10.png',
+            'images/terrace-st/Artboard11.png',
+            'images/terrace-st/Artboard12.png',
+            'images/terrace-st/Artboard34.png',
+            'images/terrace-st/Artboard1.png',
+            'images/terrace-st/Artboard2.png',
+            'images/terrace-st/Artboard3.png',
+            'images/terrace-st/Artboard4.png',
+            'images/terrace-st/Artboard5.png',
+            'images/terrace-st/Artboard6.png',
+            'images/terrace-st/Artboard7.png',
+            'images/terrace-st/Artboard13.png',
+            'images/terrace-st/Artboard14.png',
+            'images/terrace-st/Artboard15.png',
+            'images/terrace-st/Artboard16.png',
+            'images/terrace-st/Artboard17.png'
         ];
     } else if (streetName === 'High Dr') {
         images = [
-            'images/high-dr/SOE01956.jpg',
-            'images/high-dr/SOE01959.jpg',
-            'images/high-dr/SOE01960.jpg',
-            'images/high-dr/SOE01962.jpg',
-            'images/high-dr/SOE01968.jpg',
-            'images/high-dr/SOE01969.jpg',
-            'images/high-dr/SOE01972.jpg',
-            'images/high-dr/SOE01973.jpg',
-            'images/high-dr/SOE01978.jpg',
-            'images/high-dr/SOE02000.jpg',
-            'images/high-dr/SOE02017.jpg',
-            'images/high-dr/SOE02032.jpg',
-            'images/high-dr/SOE02041.jpg',
-            'images/high-dr/SOE02042.jpg',
-            'images/high-dr/SOE02045.jpg',
-            'images/high-dr/SOE02046.jpg',
-            'images/high-dr/SOE02049.jpg',
-            'images/high-dr/SOE02058.jpg',
-            'images/high-dr/SOE02066.jpg',
-            'images/high-dr/SOE02087.jpg',
-            'images/high-dr/SOE02092.jpg',
-            'images/high-dr/SOE02101.jpg',
-            'images/high-dr/SOE02113.jpg'
+            'images/high-dr/Artboard1.png',
+            'images/high-dr/Artboard2.png',
+            'images/high-dr/Artboard3.png',
+            'images/high-dr/Artboard4.png',
+            'images/high-dr/Artboard5.png',
+            'images/high-dr/Artboard6.png',
+            'images/high-dr/Artboard7.png',
+            'images/high-dr/Artboard13.png',
+            'images/high-dr/Artboard14.png',
+            'images/high-dr/Artboard15.png',
+            'images/high-dr/Artboard16.png',
+            'images/high-dr/Artboard17.png',
+            'images/high-dr/Artboard18.png',
+            'images/high-dr/Artboard19.png',
+            'images/high-dr/Artboard20.png',
+            'images/high-dr/Artboard21.png',
+            'images/high-dr/Artboard22.png',
+            'images/high-dr/Artboard23.png',
+            'images/high-dr/Artboard24.png',
+            'images/high-dr/Artboard25.png',
+            'images/high-dr/Artboard26.png',
+            'images/high-dr/Artboard27.png',
+            'images/high-dr/Artboard28.png'
         ];
     } else if (streetName === 'Berryhill Dr') {
         images = [
-            'images/berryhill-dr/SOE00004.jpg',
-            'images/berryhill-dr/SOE00032.jpg',
-            'images/berryhill-dr/SOE00043.jpg',
-            'images/berryhill-dr/SOE00069.jpg',
-            'images/berryhill-dr/SOE00074.jpg',
-            'images/berryhill-dr/SOE00081.jpg',
-            'images/berryhill-dr/SOE00084.jpg',
-            'images/berryhill-dr/SOE00090.jpg',
-            'images/berryhill-dr/SOE00093.jpg',
-            'images/berryhill-dr/SOE00098.jpg',
-            'images/berryhill-dr/SOE00115.jpg',
-            'images/berryhill-dr/SOE00122.jpg',
-            'images/berryhill-dr/SOE00151.jpg'
+            'images/berryhill-dr/Artboard1.png',
+            'images/berryhill-dr/Artboard2.png',
+            'images/berryhill-dr/Artboard3.png',
+            'images/berryhill-dr/Artboard4.png',
+            'images/berryhill-dr/Artboard5.png',
+            'images/berryhill-dr/Artboard6.png',
+            'images/berryhill-dr/Artboard7.png',
+            'images/berryhill-dr/Artboard13.png',
+            'images/berryhill-dr/Artboard14.png',
+            'images/berryhill-dr/Artboard15.png',
+            'images/berryhill-dr/Artboard16.png',
+            'images/berryhill-dr/Artboard17.png',
+            'images/berryhill-dr/Artboard18.png'
         ];
     } else if (streetName === '51st St') {
         images = [
-            'images/51st-st/bath-1.JPG',
-            'images/51st-st/bath-4.JPG',
-            'images/51st-st/bath-5.JPG',
-            'images/51st-st/bath-6.JPG',
-            'images/51st-st/bath-7.JPG',
-            'images/51st-st/bath-8.JPG',
-            'images/51st-st/bath-15.JPG',
-            'images/51st-st/bath-18.JPG',
-            'images/51st-st/bath-3.JPG',
-            'images/51st-st/bath-11.JPG',
-            'images/51st-st/bath-14.JPG',
-            'images/51st-st/bath-16.JPG',
-            'images/51st-st/bath-19.JPG'
+            'images/51st-st/Artboard8.png',
+            'images/51st-st/Artboard9.png',
+            'images/51st-st/Artboard10.png',
+            'images/51st-st/Artboard11.png',
+            'images/51st-st/Artboard12.png',
+            'images/51st-st/Artboard1.png',
+            'images/51st-st/Artboard2.png',
+            'images/51st-st/Artboard3.png',
+            'images/51st-st/Artboard4.png',
+            'images/51st-st/Artboard5.png',
+            'images/51st-st/Artboard6.png',
+            'images/51st-st/Artboard7.png'
         ];
     }
 
     images.forEach(function(imageSrc) {
+        var imgElement = document.createElement('a');
+        imgElement.href = imageSrc;
+        imgElement.setAttribute('data-fancybox', 'gallery');
         var img = document.createElement('img');
-        img.setAttribute('loading', 'lazy');
         img.src = imageSrc;
-        gallery.appendChild(img);
+        imgElement.appendChild(img);
+        gallery.appendChild(imgElement);
+    });
+
+    $('[data-fancybox="gallery"]').fancybox({
     });
 }

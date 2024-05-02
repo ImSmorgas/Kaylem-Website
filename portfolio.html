@@ -12,6 +12,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <!-- Roboto -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Fanceybox -->
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+        <!-- Custom -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
@@ -48,18 +52,18 @@
         <!-- Projects -->
         <h2 class="text-center mt-5"><span class="underline">Explore Our Projects</span></h2>
         <div class="container">
-            <div class="mx-2">
+            <div class="mx-3">
                 <div class="row">
                     <div class="portfolio-container">
                         <div class="portfolio-card position-relative" onclick="showGallery('NE Timber Hills Dr')">
                             <div class="image-container">
-                                <img src="images/ne-timber-hills-dr/DSC00080.jpg" class="w-100 pc-image" alt="">
+                                <img src="images/ne-timber-hills-dr/Artboard10.png" class="w-100 pc-image" alt="">
                                 <h3 class="text-overlay white"><span class="red">01</span><br>NE Timber Hills Dr</h3>
                             </div>
                         </div>
                         <div class="portfolio-card position-relative" onclick="showGallery('Theden St')">
                             <div class="image-container">
-                                <img src="images/theden-st/leekitchen-21.JPG" class="w-100 pc-image" alt="">
+                                <img src="images/theden-st/Artboard35.png" class="w-100 pc-image" alt="">
                                 <h3 class="text-overlay white"><span class="red">02</span><br>Theden St</h3>
                             </div>
                         </div>
@@ -71,7 +75,7 @@
                         </div>
                         <div class="portfolio-card position-relative" onclick="showGallery('Terrace St')">
                             <div class="image-container">
-                                <img src="images/terrace-st/DSC00106.jpg" class="w-100 pc-image" alt="">
+                                <img src="images/terrace-st/Artboard34.png" class="w-100 pc-image" alt="">
                                 <h3 class="text-overlay white"><span class="red">04</span><br>Terrace St</h3>
                             </div>
                         </div>
@@ -89,7 +93,7 @@
                         </div>
                         <div class="portfolio-card position-relative" onclick="showGallery('51st St')">
                             <div class="image-container">
-                                <img src="images/51st-st/bath-3.JPG" class="w-100 pc-image" alt="">
+                                <img src="images/51st-st/Artboard12.png" class="w-100 pc-image" alt="">
                                 <h3 class="text-overlay white"><span class="red">07</span><br>51st St</h3>
                             </div>
                         </div>
@@ -104,19 +108,24 @@
             </div>
         </div>
         <!-- Portfolio Photos -->
-        <div class="container-fluid bg-coal pt-5 pb-5">
+        <div id="portfolioGalleryContainer" class="container-fluid bg-coal py-5">
             <h2 id="streetName" class="text-center white mb-3"><span class="underline">Click A Project to
-                    View Gallery</span>
+                    View</span>
             </h2>
             <div id="portfolioGallery" class="portfolio-gallery">
             </div>
         </div>
-        <div class="container-lg">
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+        <div class="container">
             <span class="l-gray-line my-5"></span>
         </div>
         <!-- Footer -->
         <footer>
-            <div class="container-lg mt-3">
+            <div class="container mt-3">
                 <div class="row mb-3">
                     <div class="col-12 col-sm-5">
                         <img src="images/color-rbc.png" alt="red beard cabinets logo"
@@ -133,8 +142,8 @@
                     <div class="col-12 col-sm-5 d-flex align-items-center rbc-footer-nav">
                         <div class="footer-nav d-flex flex-nowrap">
                             <a class="mx-2 nav-link" href="index.html">Home</a>
-                            <a class="mx-2 nav-link" href="portfolio.html">Portfolio</a>
-                            <a class="mx-2 nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            <a class="mx-2 nav-link active" href="portfolio.html">Portfolio</a>
+                            <a class="mx-2 nav-link" aria-current="page" href="contact.html">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +162,13 @@
                 </div>
             </div>
         </footer>
+        <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Fancybox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <!-- Custom -->
         <script src="js/script.js"></script>
     </body>
 
