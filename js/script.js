@@ -59,8 +59,7 @@ function showGallery(streetName) {
             'images/w-126th-st/Artboard14.png',
             'images/w-126th-st/Artboard15.png',
             'images/w-126th-st/Artboard16.png',
-            'images/w-126th-st/Artboard17.png',
-            'images/w-126th-st/Artboard8.png'
+            'images/w-126th-st/Artboard17.png'
         ];
     } else if (streetName === 'Terrace St') {
         images = [
@@ -143,15 +142,20 @@ function showGallery(streetName) {
     }
 
     images.forEach(function(imageSrc) {
-        var imgElement = document.createElement('a');
-        imgElement.href = imageSrc;
-        imgElement.setAttribute('data-fancybox', 'gallery');
-        var img = document.createElement('img');
-        img.src = imageSrc;
-        imgElement.appendChild(img);
-        gallery.appendChild(imgElement);
+        var imgContainer = document.createElement('div');
+        imgContainer.classList.add('image-container');
+        
+        var imgElement = document.createElement('img');
+        imgElement.src = imageSrc;
+        imgElement.alt = 'Gallery Image';
+        
+        var imgAnchor = document.createElement('a');
+        imgAnchor.href = imageSrc;
+        imgAnchor.setAttribute('data-fancybox', 'gallery');
+        
+        imgAnchor.appendChild(imgElement);
+        imgContainer.appendChild(imgAnchor);
+        gallery.appendChild(imgContainer);
     });
 
-    $('[data-fancybox="gallery"]').fancybox({
-    });
 }

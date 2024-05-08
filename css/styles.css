@@ -21,7 +21,7 @@
     color: #8B8B8B;
 }
 .bg-body-white {
-    background-color: rgba(255, 255, 255, .85);
+    background-color: rgba(255, 255, 255, .90);
 }
 /* Navbar */
 .navbar-nav .nav-link {
@@ -198,13 +198,21 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-.portfolio-gallery img {
+.portfolio-gallery .image-container {
     width: 100%;
-    max-width: 350px;
-    height: auto;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
+    height: 0;
+    padding-top: 66.67%; /* 1:1 aspect ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-gallery .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .text-and-arrow {
     display: flex;
